@@ -10,10 +10,10 @@ import ch.swissonid.design_lib_sample.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link ParallaxFragment#newInstance} factory method to
+ * Use the {@link FlexibleSpaceWithImageFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ParallaxFragment extends BaseFragment {
+public class FlexibleSpaceWithImageFragment extends BaseFragment {
 
     @InjectView(R.id.collapsing_toolbar)
     CollapsingToolbarLayout mCollapsingToolbar;
@@ -24,11 +24,11 @@ public class ParallaxFragment extends BaseFragment {
      *
      * @return A new instance of fragment ParallaxFragment.
      */
-    public static ParallaxFragment newInstance() {
-        return new ParallaxFragment();
+    public static FlexibleSpaceWithImageFragment newInstance() {
+        return new FlexibleSpaceWithImageFragment();
     }
 
-    public ParallaxFragment() {
+    public FlexibleSpaceWithImageFragment() {
         // Required empty public constructor
     }
 
@@ -40,12 +40,12 @@ public class ParallaxFragment extends BaseFragment {
 
     @Override
     protected int getToolbarId() {
-        return R.id.toolbar_parallax;
+        return R.id.toolbar_flexible_space_with_image;
     }
 
     @Override
     protected int getTitle() {
-        return R.string.parallax_menu_title;
+        return R.string.flexible_space_with_image_menu_title;
     }
 
     @Override
@@ -55,6 +55,6 @@ public class ParallaxFragment extends BaseFragment {
 
     @Override
     protected int getLayout() {
-        return R.layout.fragment_parallax;
+        return R.layout.fragment_flexible_space_with_image;
     }
 }
