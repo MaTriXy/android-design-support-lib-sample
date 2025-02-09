@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v4.app.Fragment;
 
-import butterknife.InjectView;
+import butterknife.Bind;
 import ch.swissonid.design_lib_sample.R;
 
 /**
@@ -15,7 +15,7 @@ import ch.swissonid.design_lib_sample.R;
  */
 public class FlexibleSpaceWithImageFragment extends BaseFragment {
 
-    @InjectView(R.id.collapsing_toolbar)
+    @Bind(R.id.collapsing_toolbar)
     CollapsingToolbarLayout mCollapsingToolbar;
 
     /**
@@ -37,6 +37,7 @@ public class FlexibleSpaceWithImageFragment extends BaseFragment {
         super.onActivityCreated(savedInstanceState);
         mCollapsingToolbar.setTitle(getString(getTitle()));
     }
+
 
     @Override
     protected int getToolbarId() {
